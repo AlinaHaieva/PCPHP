@@ -28,7 +28,6 @@ class StudentListController extends BaseController
 
     public function actionEditEnglish($group_id)
     {
-        /** @var StudentComponent $component */
         $rawData = Yii::app()->getComponent('Student')->getStudentList($group_id);
         $arrayDataProvider = new CArrayDataProvider($rawData, array(
             'id' => 'id',
