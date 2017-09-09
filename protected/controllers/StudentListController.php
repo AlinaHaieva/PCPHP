@@ -43,6 +43,6 @@ class StudentListController extends BaseController
         $params = array(
             'arrayDataProvider' => $arrayDataProvider,
         );
-        $this->renderPartial('../site/studentList', $params);
+        $this->renderPartial('//site/studentList', $params);
     }
 }
