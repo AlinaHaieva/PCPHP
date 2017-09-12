@@ -10,19 +10,19 @@ class LoginForm extends CFormModel
 
     public function rules()
     {
-        return array(
-            array('username, password', 'required'),
-            array('username, password', 'length', 'min' => 4, 'max' => 10),
-            array('rememberMe', 'boolean'),
-            array('password', 'authenticate'),
-        );
+        return [
+            ['username, password', 'required'],
+            ['username, password', 'length', 'min' => 4, 'max' => 10],
+            ['rememberMe', 'boolean'],
+            ['password', 'authenticate'],
+        ];
     }
 
     public function attributeLabels()
     {
-        return array(
+        return [
             'rememberMe' => 'Remember me next time',
-        );
+        ];
     }
 
     public function authenticate($attribute, $params)

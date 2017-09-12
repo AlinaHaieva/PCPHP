@@ -4,20 +4,21 @@
     border-radius: 7px;
 }
 
-.button-area{
+.button-area {
     text-align: center;
 }
 
-.submit, .close-modal {
+.submit,
+.close-modal {
     display: inline-block;
     width: 50px;
     height: 50px;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 2px 0 rgba(0,0,0,.1)
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .1)
 }
 
-.submit{
+.submit {
     background-color: #171B65;
 }
 
@@ -33,15 +34,25 @@
     color: white;
 }
 
-.add-expert, .add-teacher{
+.add-expert,
+.add-teacher {
     color: black;
 }
 
-.errorName, .errorExperts, .errorDate{
-    color:red;
+.errorName,
+.errorExperts,
+.errorDate {
+    color: red;
 }
 
-.groupName, .incomingTest, .firstName, .entryScore, .lastName, .approvedBy, .engLevel, .customerExpert {
+.groupName,
+.incomingTest,
+.firstName,
+.entryScore,
+.lastName,
+.approve-select,
+.engLevel,
+.custom-expert {
     min-width: 180px;
     height: 30px;
     border: solid 2px black;
@@ -49,3 +60,42 @@
     box-shadow: 0 0 10px black;
 }
 
+.custom-expert {
+    display: none;
+}
+
+.row div .file-labels {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #171b65;
+    border-radius: .5em;
+    color: white;
+    position: relative;
+}
+
+.row div .browse-photo,
+.row div .browse-cv,
+.row div .remove-photo,
+.row div .remove-cv {
+    display: none;
+}
+
+.row div .remove-photo,
+.row div .remove-cv {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.cv-file,
+.photo-file {
+    text-align: left;
+    border: none;
+    color: darkblue;
+    display: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: .5em;
+    background-color: transparent;
+}
